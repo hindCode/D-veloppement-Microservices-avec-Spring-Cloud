@@ -109,9 +109,56 @@ Pour toute question ou problème lié à l'utilisation du projet, consultez la d
 
 Si vous souhaitez contribuer à ce projet, veuillez faire une **pull request** sur ce dépôt. Nous apprécions les contributions et nous vous remercions pour votre aide à améliorer ce projet.
 
+
 ## License
 
 Ce projet est sous la licence **MIT**.
 
 <img width="948" alt="Capture1" src="https://github.com/user-attachments/assets/7c8acc29-62a6-4a32-b2df-07c16975bd57" />
+
+Tester les fonctionnalités CRUD du « microservice-commandes »
+
+Produit-Service :
+•	GET http://localhost:8085/api/produits : pour lister les produits
+•	POST http://localhost:8085/api/produits : pour ajouter un produit , avec le body :
+{
+  "nom": "Produit Test",
+  "description": "Description de test",
+  "prix": 150.0,
+  "quantite": 10
+}
+
+•	GET http://localhost:8085/api/produits/1 : pour récupérer le produit de l’id=1
+•	PUT http://localhost:8085/api/produits/3 : pour modifier le produit de l’id=3, avec le body :
+{
+  "nom": "Produit Modifié",
+  "description": "Description mise à jour",
+  "prix": 200.0,
+  "quantite": 5
+}
+
+•	DELETE http://localhost:8085/api/produits/4 : pour supprimer le produit de l’id=4
+Commande-Service2 :
+•	POST http://localhost:8086/api/commandes2/commandes : pour ajouter une commande , avec le body :
+{
+  "description": "Commande de test",
+  "quantite": 10,
+  "date": "2025-01-10",
+  "montant": 500.0,
+  "idProduit": 1
+}
+
+•	GET http://localhost:8086/api/commandes2/commandes : pour affichier toutes les commandes
+•	GET http://localhost:8086/api/commandes2/commandes/2 : pour affichier la commande de l’id=2
+•	PUT http://localhost:8086/api/commandes2/commandes/1 : pour modifier le produit de l’id=1, avec le body :
+{
+    "description": "Commande 1",
+    "quantite": 20,
+    "date": "2025-01-16",
+    "montant": 750.0,
+    "idProduit": 2
+}
+
+•	DELETE http://localhost:8086/api/commandes2/commandes/4 : pour supprimer la commande de l’id=4
+
 
