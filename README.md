@@ -112,3 +112,5 @@ Si vous souhaitez contribuer à ce projet, veuillez faire une **pull request** s
 ## License
 
 Ce projet est sous la licence **MIT**.
+
+<img width="960" alt="Capture" src="https://github.com/user-attachments/assets/e03c7fed-c14e-4221-9447-03cdf3b51554" />
